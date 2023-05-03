@@ -1,0 +1,122 @@
+/*
+
+TITLE
+-
+All title components in the site
+
+*/
+
+
+.slider .title {
+
+  text-align: center;
+  margin-bottom: $global-spacing-unit-large;
+
+  // H elements
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: $global-spacing-unit-small;
+    // media queries
+    @media #{ $desktop } {
+      font-size: 32px;
+    }
+    @media #{ $tablet } {
+      font-size: 22px;
+    }
+  }
+
+  // P element aka subtitle
+  p {
+    font-size: 22px;
+    font-weight: 300;
+    // media queries
+    @media #{ $desktop } {
+      font-size: 16px;
+    }
+  }
+
+  &.no-space {
+    margin-bottom: 0;
+  }
+
+}
+
+// title for CTA
+.title--cta {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: $global-spacing-unit-large;
+
+  // title
+  h1, h2, h3, h4, h5, h6 {
+    flex-grow: 1;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: 500;
+    // media queries
+    @media #{$tablet} {
+      font-size: 26px;
+    }
+  }
+
+  //cta button
+  .btn {
+    @include btn-s-regular;
+    @include btn-gray;
+    @include btn-radius;
+    font-weight: 300;
+  }
+
+}
+
+
+// title std
+.title--std {
+
+  text-align: center;
+
+  // title
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+
+
+}
+
+.title--pr {
+
+
+  h3 {
+      font-size: 26px !important;
+      font-weight: 400 !important;
+      color: $gray;
+      text-align: left;
+      margin-bottom: $global-spacing-unit-small;
+      word-break: break-word;
+  }
+
+  p {
+      text-align: left;
+      font-weight: 400 !important;
+      color: $gray;
+      word-break: break-word;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

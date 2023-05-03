@@ -1,0 +1,157 @@
+/*
+
+Authors PAGE
+-
+Rules for the authors page
+
+*/
+
+// General rules
+
+
+// Rules for the page
+
+.author--content {
+    display: flex;
+    margin-top: $global-spacing-unit;
+    
+    // media queries 
+    @media #{$desktop} {
+        
+    
+    }
+    @media #{$tablet} {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+
+}
+
+.author--media {
+    margin: 0;
+    // background-color: blue;
+    width: 20%;
+    min-width: 280px;
+    padding: $global-spacing-unit-small;
+
+    // media queries 
+    @media #{$desktop} {
+        width: 45%;
+       
+       
+    }
+    @media #{$tablet} {
+        width: 75%;
+    
+    }
+
+    img {
+    background-color: white;
+    width: 280px;
+    height: 280px;
+    margin: 0;
+    object-fit: cover;
+    border-radius: 50%;
+    // background-color: yellow;
+        // media queries 
+        // @media #{$desktop} {
+        //     height: 300px;
+       
+        // }
+     
+    }
+
+}
+
+.author-social-links {
+
+    @media #{$tablet} {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+.author--info {
+    padding: $global-spacing-unit-small;
+
+    @media #{$tablet} {
+        width: 100%;
+    }
+
+
+    h1 {
+        margin: 0;
+        font-size: 30px;
+        padding: $global-spacing-unit-small;
+
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+        color: $m-gray;
+        padding: $global-spacing-unit-small;
+        white-space: wrap;
+    }
+
+    p {
+        margin: 0;
+        font-size: 20px;
+        padding: $global-spacing-unit-small;
+    }
+
+  
+}
+
+.divisor {
+    border-top: 3px solid $l-gray;
+    height: 2px;
+    width: 100%;
+    padding: 0;
+    
+}
+
+.author--title {
+
+    p {
+        margin: 0;
+        font-size: 20px;
+        color: $m-gray;
+        padding: $global-spacing-unit $global-spacing-unit-tiny; 
+    }
+}
+
+.author--articles {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    .slide--article {
+        width: 23%;
+        min-width: 23%;
+        // margin: 0 $global-spacing-unit $global-spacing-unit 0 ;
+
+        .slide__media img {
+            height: 380px;
+        }
+
+        // media queries 
+        @media #{$desktop} {
+            width: 46%;
+            .slide__media img {
+                height: 450px;
+            }
+        }
+        @media #{$tablet} {
+            width: 100%;
+            min-width: 100%;
+            .slide__media img {
+                height: 420px;
+            }
+        }
+    }
+}

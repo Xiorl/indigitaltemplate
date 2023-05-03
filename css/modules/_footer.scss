@@ -1,0 +1,181 @@
+/*
+
+FOOTER
+-
+Rules for the footer in the site
+
+*/
+
+
+.footer {
+  background: $l-white;
+  
+
+}
+
+
+// footer top
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  padding-top: $global-spacing-unit;
+  // media queries
+  @media #{$desktop} {
+    flex-wrap: wrap;
+  }
+  @media #{$tablet} {
+    flex-direction: column;
+  }
+
+  .footer__item {
+    padding: 0 $global-spacing-unit-tiny;
+    width: 30%;
+    word-wrap: break-word;
+    // media queries
+    @media #{$desktop} {
+      width: 33%;
+      text-align: center;
+      margin-bottom: $global-spacing-unit-small;
+    }
+    @media #{$tablet} {
+      width: 100%;
+    }
+
+  }
+  .footer__item:first-child {
+    padding-left: 0;
+    // media queries
+    @media #{$desktop} {
+      width: 100%;
+    }
+  }
+  .footer__item:last-child {
+    padding-right: 0;
+    
+    // media queries
+    @media #{$desktop} {
+      width: 100%;
+    }
+  }
+
+  // logo / copy section
+  .footer__item figure {
+    margin: 0;
+    margin-bottom: $global-spacing-unit-small;
+  }
+  .footer__item figure img {
+    width: 45%;
+    height: auto;
+    // media queries
+    @media #{$desktop} {
+      width: 15%;
+    }
+    @media #{$tablet} {
+      width: 25%;
+    }
+ 
+  }
+
+  // footer navigation bars
+  .footer__item .widget .widget-title {
+    font-size: 16px;
+    margin-bottom: $global-spacing-unit-small;
+    font-weight: $t-bold;
+    display: block;
+  }
+  .footer__item .widget ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .footer__item .widget a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: $black;
+    @include animation(0.5s);
+    &:hover {
+      color: $purple;
+    }
+  }
+  .footer__item .widget ul .sub-menu {
+    display: none !important;
+  }
+
+  // footer social icons bar
+  .footer__item--social .social-title{
+    font-size: 16px;
+    margin-bottom: $global-spacing-unit-small;
+    display: block;
+    font-weight: $t-bold;
+  }
+
+  .nav--social {
+
+    ul {
+      // media queries
+      @media #{$desktop} {
+        justify-content: center;
+      }
+    }
+
+    a {
+      padding-right: 10px;
+      padding-bottom: 10px;
+      text-decoration: none;
+    }
+
+    .icon {
+      font-size: 35px !important;
+      color: $l-gray;
+      @include animation(0.5s);
+      &:hover {
+        color: $purple;
+      }
+      &:after {
+        line-height: 0.9em;
+      }
+
+    } 
+
+  }
+  
+
+
+}
+
+// footer bottom section (copyright info)
+.footer-bottom {
+
+    // background-color: yellow;
+  
+    padding: $global-spacing-unit-large 0 $global-spacing-unit-small 0 ;
+    // media queries
+    @media #{$desktop} {
+      text-align: center;
+    }
+
+    p {
+      margin: 0;
+      font-size: 12px;
+      color: $black;
+      font-weight: 300;
+    }
+  //   a {
+  //   text-decoration: none;
+  //   font-size: 14px;
+  //   font-weight: $f-light;
+  //   color: $purple;
+  //   @include animation(0.5s);
+  //   &:hover {
+  //     color: $l-blue;
+  //   }
+
+  // }
+}
+
+
+
+
+
+

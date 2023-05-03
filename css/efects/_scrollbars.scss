@@ -1,0 +1,26 @@
+/*----------------------------------------------------*\
+    SHADOW
+    -
+    Mixin to add boxshadow
+\*----------------------------------------------------*/
+
+@mixin hiddenScroll {
+
+    // firefox
+    scrollbar-color: transparent transparent;
+    scrollbar-width: none;
+    // chromium
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0,0,0,0);
+        border-radius: 10px;
+        border: 0 solid transparent;
+    }
+
+}

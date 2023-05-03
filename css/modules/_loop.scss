@@ -1,0 +1,279 @@
+/* 
+LOOP
+-
+Rules for the slider componentes
+*/
+
+
+.loop {
+
+    margin-bottom: $global-spacing-unit-large;
+
+    .loop__content {
+        display: flex;
+        &.wrap {
+            //background-color: blue;
+            //flex-wrap: wrap;
+       
+        }
+        &.models {
+            //display: -webkit-box;
+            margin-bottom: $global-spacing-unit;
+            width: 100%;
+            overflow-x: scroll;
+            @include hiddenScroll;
+            
+            
+            .post-item {
+                width: 32.33%;
+                min-width: 32.33%;
+                @media #{$desktop} {
+                    width: 49%;
+                    min-width: 49%;
+                }
+                @media #{$tablet} {
+                    width: 85%;
+                    min-width: 85%;
+                    
+                }
+
+                .media img {
+                    height: 435px;
+                    @media #{$tablet} {
+                        height: 330px;
+                        
+                    }
+    
+                }
+           
+            }
+        }
+
+    }
+    &.row .loop__content {
+        flex-direction: row;
+    }
+    &.column .loop__content {
+        flex-direction: column;
+    }
+  
+
+    // blog
+    &.models,
+    &.blog {
+        
+        .post-item {
+            //min-width: 25%;
+            margin-right: $global-spacing-unit-small;
+            margin-bottom: $global-spacing-unit-tiny;
+        }
+        .post-item:last-child {
+            margin-right: 0;
+        }
+        .loop__content > div {
+            width: 33.3%;
+            word-break: break-word;
+            
+            // media queries
+            // @media #{$tablet} {
+            //     width: 100%;
+            //     min-width: 100%;
+            // }
+
+            @media #{$desktop} {
+                width: 44%;
+                min-width: 44%;
+                // flex-wrap: wrap;
+                // flex-direction: column;
+                
+            }
+            @media #{$tablet} {
+                width: 100%;
+                min-width: 100%;
+                
+            }
+        }
+    }
+    &.post {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // @media #{$tablet} {
+        //     flex-direction: column;
+            
+        // }
+
+        .post-item {
+            //background-color: red;
+            width: 47%;
+            margin-right: $global-spacing-unit-small;
+            //margin-bottom: $global-spacing-unit;
+
+            // @media #{$tablet} {
+            //     width: 100%;
+            //     min-width: 100%;
+            //     margin-bottom: $global-spacing-unit-small;
+                
+            // }
+            img {
+                height: 360px;
+
+                // media queries
+                @media #{ $desktop } {
+                    height: 380px;
+                }
+                @media #{ $tablet } {
+                    height: 400px;
+                }
+            }
+
+
+            @media #{$desktop} {
+                flex-direction: row;
+                width: 44%;
+                min-width: 44%;
+                margin-bottom: $global-spacing-unit-small;
+                
+            }
+            @media #{$tablet} {
+                flex-direction: column;
+                width: 100%;
+                min-width: 100%;
+                margin-bottom: $global-spacing-unit-small;
+                
+            }
+        }
+
+        &.author {
+            width: 100%;
+            .post-item {
+                width: 23%;
+
+                .media img {
+                    height: 400px;
+                }
+            }
+        }
+    }
+
+    &.author {
+        .media img {
+            height: 330px !important;
+        }
+    }
+
+    // &.author {
+    //     display: flex;
+    //     width: 100%;
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //     @media #{$tablet} {
+    //         flex-direction: column;
+            
+    //     }
+
+    //     .post-item {
+    //         width: 25%;
+    //         margin-right: $global-spacing-unit-small;
+    //         margin-bottom: $global-spacing-unit;
+
+    //         .media img {
+    //             height: 400px;
+    //         }
+
+    //         @media #{$tablet} {
+    //             width: 100%;
+    //             min-width: 100%;
+    //             margin-bottom: $global-spacing-unit-small;
+                
+    //         }
+    //     }
+    // }
+
+    
+
+}
+
+.loop--bg.blue {
+
+    > div {
+        background: rgb(109,194,253);
+        background: linear-gradient(0deg, rgba(109,194,253,1) 0%, rgba(255,255,255,1) 100%);
+        border-radius: 0 0 $global-spacing-unit $global-spacing-unit;
+        padding: $global-spacing-unit;
+        overflow-x: scroll;
+        @include hiddenScroll;
+      
+    }
+    &.solid {
+        > div {
+        border-radius: $global-spacing-unit !important;
+        background: #daf0fe !important;   
+        }
+    }
+    &.scroll {
+        list-style: none;
+        flex-direction: row;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+        @include hiddenScroll;
+    }
+    
+}
+
+.loop--pr.purple {
+    
+    margin-top: $global-spacing-unit-large;
+ 
+    > div {
+        display: block;
+        background: #d7befb;
+        border-radius: $global-spacing-unit-small;
+        padding:  $global-spacing-unit $global-spacing-unit 0 $global-spacing-unit;
+    }
+    
+}
+
+
+.loop--projects-logos {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .post-item {
+        width: 25%;
+        overflow: hidden;
+        padding: $global-spacing-unit-tiny;
+        // media queries
+        @media #{$desktop} {
+            width: 50%;
+        }
+        @media #{$tablet} {
+            width: 100%;
+        }
+
+        
+      
+        
+
+    }
+
+    figure {
+        width: 100%;
+        padding-top: 75%;
+        position: relative;
+    }
+    figure img {
+        width: 100%;
+        height: 100% !important;
+        object-fit: contain !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+}
+

@@ -1,0 +1,74 @@
+/*----------------------------------------------------*\
+    VALUES
+    -
+    General values for the project
+\*----------------------------------------------------*/
+
+// GENERAL VARS
+// 1. Global spacing unit
+$global-spacing-unit-root: 30px;
+// 2. Global font size
+$global-font-size:   18px !default;
+$global-line-height: 24px !default;
+
+
+// Font sizes for titles
+$h1-b: 42px;
+$h1-m: 32px;
+$h2-b-m: 32px;
+$h3-m: 30px;
+$h4-r: 28px;
+$h5-m: 26px;
+
+// Font sizes for body
+$body1-r-m: 24px;
+$body2-r-l-m: 22px; 
+$body3-r-m: 20px;
+$body4-r-m: 18px;
+
+
+// Font sizes for label
+$label1-l-r-m: 16px;
+$caption-r-m: 14px;
+
+// Font weights
+$f-black: 900;
+$f-medium: 500;
+$f-regular:400;
+$f-light: 200;
+
+
+// COLOR VARS
+// 1. Primar colors
+$black:  #000;
+$white:  #FFF;
+$purple: #7925EF;
+$l-blue: #6DC2FD;
+$l-white: #F0F1F3;
+$m-white: #D9DCDB;
+$gray:   #323232;
+$s-gray: #5C6268;
+$l-gray: #A7AEAD;
+$m-gray: #87888A;
+$h-gray: #434750;
+
+// 2. Global background and font color
+$global-background: $white;
+$global-color: $black;
+
+// 3. Project colors
+$red: #FF0036;
+$yellow: #EF6F4D;
+
+// 5. Colores de las redes sociales
+$facebook-c: #3b5998;
+$twitter-c:  #1da1f2;
+$whatsapp-c: #4dc247;
+
+// MEDIA QUERIES
+// 1. Break poits
+$wide:    "screen and (max-width: 1600px)";
+$desktop: "screen and (max-width:  980px)";
+$tablet:  "screen and (max-width:  768px)";
+$phablet: "screen and (max-width:  440px)";
+$mobile:  "screen and (max-width:  380px)";

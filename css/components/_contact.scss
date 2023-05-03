@@ -1,0 +1,141 @@
+
+
+
+.contact-container {
+    background-color: $l-white;
+    padding: $global-spacing-unit-large;
+    border-radius: $global-spacing-unit-large;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    // media queries
+    @media #{$desktop} {
+        border-radius: $global-spacing-unit;
+        padding: $global-spacing-unit;
+    }
+    
+    
+}
+
+.contact-box {
+    flex-grow: 1;
+    margin-right: $global-spacing-unit;  
+
+    h1 {
+        font-size: 42px;
+
+        // media queries
+        @media #{$tablet} {
+            font-size: 32px;
+        }
+        
+    }
+}
+
+.contact-info {
+    span {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    p {
+        margin-top: $global-spacing-unit-tiny;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+.contact-form {
+    width: 70%;
+    flex-grow: 2;
+    p {
+        margin: 0;
+    }
+
+    p:nth-child(1) {
+        font-size: 22px;
+        margin-bottom: $global-spacing-unit-small;
+
+        
+        // media queries
+        @media #{$desktop} {
+            font-size: 20px;
+        }
+        @media #{$tablet} {
+            font-size: 18px;
+        }
+    }
+
+    .form {
+        display: flex;
+        gap: $global-spacing-unit-tiny;
+
+        label {
+            color: $m-gray;
+     
+        }
+        p {
+            color: $m-gray;
+            font-size: 16px;
+            font-weight: 300;
+            // media queries
+            @media #{$desktop} {
+                font-size: 14px;
+            }
+            @media #{$tablet} {
+                font-size: 14px;
+            }
+        }
+   
+    }
+    @mixin input-style {
+        font-size: 18px;
+        padding: $global-spacing-unit-small;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: $global-spacing-unit-tiny;
+        margin-bottom: $global-spacing-unit-small;
+
+        // media queries
+        @media #{$desktop} {
+            font-size: 16px;
+        }
+    
+
+        
+    }
+
+    .form-left {
+        width: 50%;
+        input, select {
+            width: 100%;
+            justify-content: center;
+            @include input-style;
+            
+        }
+      
+    
+    }
+
+    .form-right {
+        width: 50%;
+        
+        input, select {
+            width: 100%;
+            justify-content: center;
+            @include input-style;
+        }
+
+    }
+    textarea {
+        display: flex;
+        width: 100%;
+        height: 100px;
+        justify-content: center;
+        @include input-style;
+        border-radius: $global-spacing-unit-tiny;
+        margin-bottom: $global-spacing-unit-small;
+    }
+
+}

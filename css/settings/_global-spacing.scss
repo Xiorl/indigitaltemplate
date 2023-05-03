@@ -1,0 +1,49 @@
+/*----------------------------------------------------*\
+    GLOBAL SPACING
+    -
+    Espaciado general epara el todo el sitio, se
+    define una unidad base de la que parten todas
+    las demas variables
+\*----------------------------------------------------*/
+
+// GLOBAL SPACING UNIT
+$global-spacing-unit: round($global-spacing-unit-root) !default;
+$global-oldIE: false !default;
+// Variables de espaciado con multiplicador
+$global-spacing-unit-factor-tiny: 0.25 !default;
+$global-spacing-unit-factor-small: 0.5 !default;
+$global-spacing-unit-factor-large: 2 !default;
+$global-spacing-unit-factor-huge: 4 !default;
+// Variables de espaciado con multiplicador
+$global-spacing-unit-tiny: round($global-spacing-unit * $global-spacing-unit-factor-tiny);
+$global-spacing-unit-small: round($global-spacing-unit * $global-spacing-unit-factor-small);
+$global-spacing-unit-large: round($global-spacing-unit * $global-spacing-unit-factor-large);
+$global-spacing-unit-huge: round($global-spacing-unit * $global-spacing-unit-factor-huge);
+// GLOBAL REM
+// Convierte los pixeles en su equivalente en rem (root em)
+@function global-rem($value) {
+    @if (type-of($value)==number) {
+        @if (unit($value) !="px") {
+            @error "`#{$value}` needs to be a pixel value.";
+        }
+    }
+    @else {
+        @error "`#{$value}` needs to be a number.";
+    }
+    @return calc($value / $global-font-size) * 1rem;
+}
+// Mixin que declara la converción a REM
+@mixin global-rem($property, $value) {
+    @if (type-of($value)==number) {
+        @if (unit($value) !="px") {
+            @error "`#{$value}` needs to be a pixel value.";
+        }
+    }
+    @else {
+        @error "`#{$value}` needs to be a number.";
+    }
+    @if ($global-oldIE==true) {
+        #{$property}: $value;
+    }
+    #{$property}: global-rem($value);
+}

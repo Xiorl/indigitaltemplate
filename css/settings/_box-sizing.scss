@@ -1,0 +1,12 @@
+/*----------------------------------------------------*\
+    BOX-SIZING
+    -
+    Le da la propiedad a los elementos de ocupar su
+    espacio normal sin inportar el padding
+\*----------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

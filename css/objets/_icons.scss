@@ -1,0 +1,498 @@
+/*
+
+ICONS
+-
+Rules for the icons
+
+*/
+
+// General rules
+.icon {
+  
+  font-family: $icons;
+  display: block;
+  &:after {
+    display: block;
+  }
+  
+}
+
+.icon--facebook:after {
+  content: '\F308';
+}
+
+.icon--instagram:after {
+  content: '\F16D';
+}
+
+.icon--left-arrow:after {
+      content: '\E802';
+}
+
+// location icon
+.icon--location:before {
+  content: '\E845';
+}
+
+
+.icon--right-arrow:after {
+      content: '\E803';
+}
+
+.icon--email:after {
+  content: '\F0E0';
+}
+
+.icon--web:after {
+  content: '\E84A';
+}
+
+.icon--twitter:after {
+  content: '\F099';
+}
+
+
+// amenities icons 
+.icon--amenities-terrace:after {
+  content: '\E86B';
+}
+.icon--amenities-crossfit-circuit:after {
+  content: '\E84E';
+}
+
+.icon--amenities-rappelling-wall:after {
+  content: '\E84F';
+}
+
+.icon--amenities-theather:after {
+  content: '\E850';
+}
+
+.icon--amenities-rest-area:after {
+  content: '\E851';
+}
+
+.icon--amenities-paddel:after {
+  content: '\E852';
+}
+
+.icon--amenities-jogger:after {
+  content: '\E853';
+}
+
+.icon--amenities-spot-for-photos:after {
+  content: '\E854';
+}
+
+.icon--amenities-sundeck:after {
+  content: '\E855';
+}
+
+.icon--amenities-swings-with-overlooking:after {
+  content: '\E856';
+}
+
+.icon--amenities-swim-lane:after {
+  content: '\E8B3';
+}
+
+.icon--amenities-outdoor-exersicer:after {
+  content: '\E859';
+}
+
+.icon--amenities-ping-pong-table:after {
+  content: '\E85C';
+}
+
+.icon--amenities-jumper:after {
+  content:'\E85D';
+}
+
+.icon--amenities-climbing-wall:after {
+  content:'\E85A';
+}
+
+.icon--amenities-skate-park:after {
+  content:'\E85B';
+}
+
+.icon--amenities-skate-park:after {
+  content:'\E85B';
+}
+
+.icon--amenities-multiple-tables:after {
+  content:'\E85E';
+}
+
+.icon--amenities-walkers:after {
+  content:'\E85F';
+}
+
+.icon--amenities-yoga-area:after {
+  content:'\E860';
+}
+
+.icon--amenities-techonology-and-ecotechnology:after {
+  content:'\E896';
+}
+
+.icon--amenities-jacuzzi:after {
+  content:'\E895';
+}
+
+.icon--amenities-agora-theater:after {
+  content:'\E861';
+}
+
+.icon--amenities-clubhouse-livingroom-kitchen-stoveoven:after {
+  content:'\E862';
+}
+
+.icon--amenities-giant-chess:after {
+  content:'\E863';
+}
+
+.icon--amenities-semi-olympic-pool:after {
+  content:'\E864';
+}
+
+.icon--amenities-giant-chess:after {
+  content:'\E863';
+}
+
+.icon--amenities-fishing:after {
+  content:'\E865';
+}
+
+.icon--amenities-beach-club:after {
+  content:'\E866';
+}
+
+.icon--amenities-party-boat:after {
+  content:'\E867';
+}
+
+.icon--amenities-water-activities:after {
+  content:'\E868';
+}
+
+.icon--amenities-stokers:after {
+  content:'\E869';
+}
+
+.icon--amenities-pier:after {
+  content:'\E86A';
+}
+
+.icon--amenities-palapas:after {
+  content:'\E86C';
+}
+
+.icon--amenities-volleyball-court:after {
+  content:'\E86D';
+}
+
+.icon--amenities-miniature-golf:after {
+  content:'\E86E';
+}
+
+.icon--amenities-event-room:after {
+  content:'\E86F';
+}
+
+.icon--amenities-elevator:after {
+  content:'\E870';
+}
+
+.icon--amenities-terrace-for-events:after {
+  content:'\E871';
+}
+
+.icon--amenities-roof-garden:after {
+  content:'\E872';
+}
+
+.icon--amenities-co-working:after {
+  content:'\E873';
+}
+
+.icon--amenities-independent-access:after {
+  content:'\E897';
+}
+
+.icon--amenities-soccer-field:after {
+  content:'\E874';
+}
+
+.icon--amenities-jogging-track:after {
+  content:'\E875';
+}
+
+.icon--amenities-track-carts-skates:after {
+  content:'\E876';
+}
+
+.icon--amenities-hammock:after {
+  content:'\E877';
+}
+
+.icon--amenities-sports-field:after {
+  content:'\E878';
+}
+
+.icon--amenities-wadding-pool:after {
+  content:'\E879';
+}
+
+.icon--amenities-green-areas:after {
+  content:'\E87A';
+}
+
+.icon--amenities-grill-area:after {
+  content:'\E8B8';
+}
+
+.icon--amenities-gym:after {
+  content:'\E87B';
+}
+
+.icon--amenities-kids-games:after {
+  content:'\E87C';
+}
+
+.icon--amenities-pool:after {
+  content:'\E87D';
+}
+
+.icon--amenities-clubhouse:after {
+  content:'\E87E';
+}
+
+.icon--amenities-exersicers-area:after {
+  content:'\E87F';
+}
+
+.icon--amenities-dog-park:after {
+  content:'\E880';
+}
+
+.icon--amenities-controlled-access:after {
+  content:'\E881';
+}
+
+.icon--amenities-park:after {
+  content:'\E882';
+}
+
+.icon--amenities-side-aisle:after {
+  content:'\E883';
+}
+
+.icon--amenities-tv-room:after {
+  content:'\E8B9';
+}
+
+.icon--amenities-bathroom-dressing-room:after {
+  content:'\E884';
+}
+
+.icon--amenities-bar:after {
+  content:'\E89A';
+}
+
+.icon--amenities-service-room:after {
+  content:'\E885';
+}
+
+.icon--amenities-walkin-closet:after {
+  content:'\E899';
+}
+
+.icon--amenities-dinning-room:after {
+  content:'\E886';
+}
+
+.icon--amenities-washing-area:after {
+  content:'\E887';
+}
+
+.icon--amenities-private-bathroom:after {
+  content:'\E888';
+}
+
+.icon--amenities-solar-heater:after {
+  content:'\E889';
+}
+
+.icon--amenities-study-room:after {
+  content:'\E88A';
+}
+
+.icon--amenities-solar-panel:after {
+  content:'\E88B';
+}
+
+.icon--amenities-covered-area:after {
+  content:'\E88C';
+}
+
+.icon--amenities-terrace-level:after {
+  content:'\E88D';
+}
+
+.icon--amenities-breakfast-area:after {
+  content:'\E88E';
+}
+//
+.icon--amenities-back-terrace:after {
+  content:'\E8B6';
+}
+//
+.icon--amenities-multiple-living:after {
+  content:'\E8B1';
+}
+
+.icon--amenities-visitor-parking:after {
+  content:'\E893';
+}
+
+// details icons
+
+.icon--details-hallway:after {
+  content:'\E8BF';
+}
+
+.icon--details-tv-room:after {
+  content:'\E8B5';
+}
+
+.icon--details-bathroom-dressing-room:after {
+  content:'\E890';
+}
+
+.icon--details-terrace:after {
+  content:'\E891';
+}
+
+.icon--details-bar-area:after {
+  content:'\E892';
+}
+
+.icon--details-service-room:after {
+  content:'\E89B';
+}
+
+.icon--details-walkin-closet:after {
+  content:'\E88F';
+}
+
+.icon--details-study-room:after {
+  content:'\E89C';
+}
+
+.icon--details-andining-room:after {
+  content:'\E89D';
+}
+
+.icon--details-washing-area:after {
+  content:'\E89E';
+}
+
+.icon--details-private-bathroom:after {
+  content:'\E8C3';
+}
+
+.icon--details-solar-heater:after {
+  content:'\E8A0';
+}
+
+.icon--details-solar-panel:after {
+  content:'\E8A1';
+}
+
+.icon--details-roof-washing-area:after {
+  content:'\E8A2';
+}
+
+.icon--details-thrid-level-terrace:after {
+  content:'\E8A3';
+}
+
+.icon--details-multiple-hall:after {
+  content:'\E8AA';
+}
+
+.icon--details-breakfast-area:after {
+  content:'\E8A6';
+}
+//
+.icon--details-back-terrace:after {
+  content:'\E8A5';
+}
+
+.icon--details-dinning-room:after {
+  content:'\E8A8';
+}
+
+.icon--details-receiver:after {
+  content:'\E8A4';
+}
+
+.icon--details-kitchen:after {
+  content:'\E8C2';
+}
+
+.icon--details-service-room:after {
+  content:'\E8AC';
+}
+
+.icon--details-yard:after {
+  content:'\E8AB';
+}
+
+.icon--details-cellar:after {
+  content:'\E8AC';
+}
+
+.icon--details-laundry-room:after {
+  content:'\E8AD';
+}
+
+.icon--details-rooftop-laundry-area:after {
+  content:'\E8AE';
+}
+
+.icon--details-garden-terrace:after {
+  content:'\E8AF';
+}
+
+.icon--details-balcony:after {
+  content:'\E8B0';
+}
+
+.icon--details-full-bathroom:after {
+  content:'\E8B7';
+}
+
+
+// details icons 
+
+.icon--details-bedrooms:after {
+  content:'\E8BC';
+}
+
+.icon--details-bathrooms:after {
+  content:'\E8BB';
+}
+
+.icon--details-construction-meters:after {
+  content:'\E8BE';
+}
+
+.icon--details-meters-of-the-land:after {
+  content:'\E8BA';
+}
+
+.icon--details-number-of-parking-spaces:after {
+  content:'\E8BD';
+}

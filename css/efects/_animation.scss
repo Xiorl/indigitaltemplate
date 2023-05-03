@@ -1,0 +1,16 @@
+/*----------------------------------------------------*\
+    ANIMATION
+    -
+    Mixins que contienen el efecto de animación
+    modo de uso simple
+    .elemento {
+      @include animation-(TIMEs);
+    }
+\*----------------------------------------------------*/
+
+@mixin animation($anim-time) {
+     -webkit-transition: all $anim-time ease;
+     -moz-transition: all $anim-time ease;
+     -o-transition: all $anim-time ease;
+     transition: all $anim-time ease;
+}

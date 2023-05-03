@@ -1,0 +1,51 @@
+/*-----------------------------------------------------------
+
+	Theme Name: ROY FRAMEWORK
+	Theme URI: ----
+	Author: RoyPhoenix
+	Author URI: http://royphoenix.com
+	Description: ----
+	License: Private
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+----------------------------------------------------------- */
+
+// SETTINGS
+@import 'settings/_values';
+@import 'settings/_reset';
+@import 'settings/_normalize';
+@import 'settings/_global-spacing';
+@import 'settings/_fonts';
+@import 'settings/_box-sizing';
+@import 'settings/_page';
+@import 'settings/_share';
+
+// EFECTS
+@import 'efects/_animation';
+@import 'efects/_scrollbars';
+
+// OBJETS
+@import 'objets/_btn';
+@import 'objets/_icons';
+
+// COMPONENTS
+@import 'components/_nav';
+@import 'components/_content';
+@import 'components/_title';
+@import 'components/_article';
+@import 'components/_blog';
+@import 'components/_widgets';
+@import 'components/_result';
+@import 'components/_contact';
+@import 'components/_searchbox';
+@import 'components/_post-item';
+
+// MODULES
+@import 'modules/_top_bar';
+@import 'modules/_hero-banner';
+@import 'modules/_footer';
+@import 'modules/_loop';
+@import 'modules/_slider';
+@import 'modules/_404-page';
+@import 'modules/_author';
+@import 'modules/_search';

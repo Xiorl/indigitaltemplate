@@ -1,0 +1,58 @@
+/*----------------------------------------------------*\
+    SHARE
+    -
+    Share rules for the site styles
+\*----------------------------------------------------*/
+
+address, blockquote, p, pre, dl, ol, ul, figure, hr, table, fieldset {
+    @include global-rem(margin-bottom, $global-spacing-unit);
+}
+p {
+    margin-bottom: $global-spacing-unit;
+}
+h1, h2, h3, h4, h5, h6 {
+    @include global-rem(margin-bottom, $global-spacing-unit);
+    margin-top: 0;
+}
+// List constant identation
+dd, ol, ul {
+    @include global-rem(margin-left, $global-spacing-unit);
+}
+// Main wrapper
+.wrapper {
+	width: 1200px;
+	margin: 0 auto;
+
+    
+    // media queries
+    @media #{$wide} {
+        width: 90%;
+        padding: 0 $global-spacing-unit-small;
+    }
+    // media queries
+    @media only screen and (max-width: 330px) {
+        width: 100%;
+        padding: 0 $global-spacing-unit-tiny;
+    }
+}
+.clear {
+	clear: both;
+}
+
+.mobile {
+    display: none !important;
+    margin: $global-spacing-unit-tiny;
+    // media queries
+    @media #{$desktop} {
+        display: block !important;
+    }
+}
+
+// .desktop {
+
+//     // media queries
+//     @media #{$tablet} {
+//         display: none !important;
+//     }
+
+// }

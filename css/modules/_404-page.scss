@@ -1,0 +1,103 @@
+/*
+
+404 PAGE
+-
+Rules for the 404 page
+
+*/
+
+// General rules
+
+
+// Rules for the page
+
+.error--content {
+    color: $m-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: $global-spacing-unit-large;
+    margin-bottom: 120px;
+
+    figure {
+        margin: 0;
+
+    }
+
+    img {
+        width: 220px;
+        height: auto;
+        
+        // media queries 
+        @media #{$desktop} {
+            width: 200px;
+        }
+        @media #{$tablet} {
+            width: 160px;
+        }
+
+    }
+    
+
+    h2 {
+        margin: 0;
+        font-size: 26px;
+        font-weight: 600;
+        margin: $global-spacing-unit-tiny;
+        text-align: center;
+
+
+        // media queries 
+        @media #{$tablet} {
+            font-size: 22px;
+        }
+        
+    }
+    p {
+        margin: 0;
+        font-size: 24px;
+        margin: $global-spacing-unit-tiny;
+        text-align: center;
+
+        // media queries 
+        @media #{$tablet} {
+            font-size: 20px;
+        }
+        
+    }
+    span {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 600;
+        margin: $global-spacing-unit-tiny;
+        text-align: center;
+
+        // media queries 
+        @media #{$tablet} {
+            font-size: 18px;
+        }
+    }
+
+}
+
+.btn-blue {
+    color: $white;
+    @include btn-blue;
+    @include btn-s-large;
+    border: 2px solid $l-blue;
+    @include btn-radius;
+    margin: $global-spacing-unit-small;
+
+    &:hover {
+        color: $white;
+    }
+
+    // media queries 
+    @media #{$tablet} {
+        @include btn-s-regular;
+    }
+    
+}
+
+

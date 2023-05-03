@@ -1,0 +1,50 @@
+/*----------------------------------------------------*\
+    FONTS
+    -
+    Import fonts from Google Fonts and Icons
+\*----------------------------------------------------*/
+
+// IMPORT FONTS
+// 1. Global font
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;300;500;700&display=swap');
+
+
+// 2. Icons
+@font-face {
+    font-family: 'icons';
+    src: url('../assets/icons/icons.eot');
+    src: url('../assets/icons/icons.eot') format('embedded-opentype'), 
+         url('../assets/icons/icons.woff2') format('woff2'), 
+         url('../assets/icons/icons.woff') format('woff'), 
+         url('../assets/icons/icons.ttf') format('truetype'), 
+         url('../assets/icons/icons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+// Global fonts
+// 1. Fuentes
+$global-font-family: 'Alexandria', Helvetica, Sans-serif;
+$head-font-family:   'Alexandria', Helvetica, Sans-serif;
+// 2. Font Weight
+$t-light:   300;
+$t-regular: 400;
+$t-sbold:   600;
+$t-bold:    700;
+
+// HEADINGS
+h1, h2, h3, h4, h5, h6 {
+    font-family: $head-font-family;
+}
+h1 {
+    font-size: 48pt;
+}
+h2, h3 {
+    font-size: 34pt;
+}
+h4, h5, h6 {
+    font-size: 24pt;
+}
+// Icons codes
+// 1. Font family variable
+$icons: 'icons';

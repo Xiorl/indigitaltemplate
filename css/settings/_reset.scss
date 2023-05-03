@@ -1,0 +1,21 @@
+/*----------------------------------------------------*\
+    RESET
+    -
+    Limpia los margenes en los elementos
+\*----------------------------------------------------*/
+
+body, h1, h2, h3, h4, h5, h6, blockquote, p, pre, dl, dd, ol, ul, figure, hr, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+// Elimina los margenes heredados
+li> {
+    ol, ul {
+        margin-bottom: 0;
+    }
+}
+// Eliina el espacio por defecto de las tablas
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

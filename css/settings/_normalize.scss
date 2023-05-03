@@ -1,0 +1,232 @@
+/*----------------------------------------------------*\
+    NORMALIZE
+    -
+    Elimina y normaliza la visualización en los
+    distintos navegadores
+\*----------------------------------------------------*/
+
+// DOCUMENTO
+// -
+// 1. Muetsra el correcto interlineado en todos los navegadores
+// 2. Previene el auto ajuste devido a la orientación del dispositivo
+html {
+     line-height: 1.15;
+     -ms-text-size-adjust: 100%;
+     webkit-text-size-adjust: 100%;
+}
+// SECTIONS
+// -
+// 1. Elimina el margen en todos los navegadores
+body {
+     margin: 0;
+}
+// 2. Muestra correctamente los elementos en IE9
+article, aside, footer, header, nav, section {
+     display: block;
+}
+// 3. Muestra el correcto margen de H1 en Chrome, Firefox y Safari
+h1 {
+     font-size: 2em;
+     margin: 0.67em 0;
+}
+// CONTENIDO AGRUPADO
+// -
+// 1. Muestra correctamente los elementos en IE
+figcaption, figure, main {
+     display: block;
+}
+// 2. Muestra el correctamente los elementos en IE
+figure {
+     margin: 1em 40px;
+}
+// 3. Muestra el correcto box sizing en Firefox
+// 4. Muestra rl correcto overflow en IE
+hr {
+     box-sizing: content-box;
+     height: 0;
+     overflow: visible;
+}
+// 5. Muestra correctamente el valor 'em' en todos los navegadores
+pre {
+     font-family: monospace, monospace;
+     font-size: 1em;
+}
+// SEMANTICA EN LOS TEXTOS
+// -
+// 1. Remueve el fondo gris en los enlaces activos en IE-10
+// 2. Elimina las saltos en el subrrayado de los enlaces en iOS8+ y Safari 8+ 
+a {
+     background-color: transparent;
+     -webkit-text-decoration-skip: objects;
+}
+// 3. Elimina el vorde inferior en Chrome y Firefox
+// 4. Agrega el correcto text-decorarion en Chrome, Edge, IE, Opera y Safari
+abbr[title] {
+     border-bottom: none;
+     text-decoration: underline;
+     text-decoration: underline dotted;
+}
+// 4. Previene que se dupplique el peso de la fuente en Safari
+b, strong {
+     font-weight: inherit;
+}
+// 5. Agrega el peso correcto de la fuente en Chrome, Edge y Safari
+b, strong {
+     font-weight: bolder;
+}
+// 5. Muestra la correcta escala en todos los navegadores
+// 6. Muestra correctamente el valor 'em' en todos los navegadores
+ode, kbd, samp {
+     font-family: monospace, monospace;
+     font-size: 1em;
+}
+// 7. Muestra correctamente font-style en Android 4.3
+dfn {
+     font-style: italic;
+}
+// 8. Agrega el correcto fondo y color en IE-9
+mark {
+     background-color: #ff0;
+     color: #000;
+}
+// 9. Agrega el tamaño de fuente de forma correcta en todos los navegadores
+small {
+     font-size: 80%;
+}
+// 10. Previene que los elementos 'sub' y 'sup' hereden incorrectamente los estilos
+sub, sup {
+     font-size: 75%;
+     line-height: 0;
+     position: relative;
+     vertical-align: baseline;
+}
+sub {
+     bottom: -0.25em;
+}
+sup {
+     top: -0.5em;
+}
+// CONTENIDO EMBEDIDO
+// -
+// 1. Muestra los elementos correctamente en IE-9
+audio, video {
+     display: inline-block;
+}
+// 2. Muestra los elementos correctamente en iOS 4-7
+audio:not([controls]) {
+     display: none;
+     height: 0;
+}
+// 3. Elimina el borde interno de las imagenes dentro de un enlace en IE-10
+img {
+     border-style: none;
+}
+// 4. Oculta el overflow en IE
+svg:not(:root) {
+     overflow: hidden;
+}
+// FORMULARIOS
+// -
+// 1. Modifica el estilo de fuente en todos los navegadores
+// 2. Elimina el margen en Firefox y Safari
+button, input, optgroup, select, textarea {
+     font-family: sans-serif;
+     font-size: 100%;
+     line-height: 1.15;
+     margin: 0;
+}
+// 3. Muestra el overflow en IE y Edge
+button, input {
+     overflow: visible;
+}
+// 4. Elimina la herencia del 'text-transform' en Edge, Firefox y IE
+button, select {
+     text-transform: none;
+}
+// 5. Previene que WebKit elimine las etiquetes 'audio' y 'video'
+button, html [type="button"], [type="reset"], [type="submit"] {
+     -webkit-appearance: button;
+}
+// 6.Elimina el borde y paddin de Firefox
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+     border-style: none;
+     padding: 0;
+}
+// 7. Restaura los estilos para la evento 'focus'
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+     outline: 1px dotted ButtonText;
+}
+// 8. Muestra el correcto padding en Firefox
+fieldset {
+     padding: 0.35em 0.75em 0.625em;
+}
+// 9. Muestra el correcto corte en el texto en Edge y IE
+// 10. Muetsra el correctamente la herencia de color en los campos 'fliedset' en IE
+// 11. Elimina el padding que agregado en todos los navegadores
+legend {
+     box-sizing: border-box;
+     color: inherit;
+     display: table;
+     max-width: 100%;
+     padding: 0;
+     white-space: normal;
+}
+// 12. Muetsra correctamente los elementos en IE 9
+// 13. Muetra correctamente la alineación vertical en Chrome, Firefox y Opera
+progress {
+     display: inline-block;
+     vertical-align: baseline;
+}
+// 14. Elimina la barra de scroll vertical por defecto en IE
+textarea {
+     overflow: auto;
+}
+// 15. Muestra correctamente 'box-sizing' en IE-10
+[type="checkbox"], [type="radio"] {
+     box-sizing: border-box;
+     padding: 0;
+}
+// 16. Muetsra correctamente el estilo de cursos en Chrome
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+     height: auto;
+}
+// 17. Muestra correctamente la linea externa en Safari
+[type="search"] {
+     -webkit-appearance: textfield;
+     outline-offset: -2px;
+}
+// 18. Remueve el padding interno en los botones en CHrome y Safari
+[type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration {
+     -webkit-appearance: none;
+}
+// 19. Cambia la propiedad 'inherit' en Safari
+::-webkit-file-upload-button {
+     -webkit-appearance: button;
+     font: inherit;
+}
+// INTERACTIVO
+//-
+// 1. Muestra correctamente los elementos en Edge, IE y Firefox
+details, menu {
+     display: block;
+}
+// 2. Muestra correctamente los elementos en todos los navegadores
+summary {
+     display: list-item;
+}
+// SCRIPTING
+//-
+// 1. Muestra correctamente los elementos en IE-9
+canvas {
+     display: inline-block;
+}
+// 2. Muestra correctamente los elementos en IE
+template {
+     display: none;
+}
+// HIDDEN
+// -
+// 1. Muestra correctamente los elementos en IE-10
+[hidden] {
+     display: none;
+}

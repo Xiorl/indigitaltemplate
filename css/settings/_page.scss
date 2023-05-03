@@ -1,0 +1,14 @@
+/*----------------------------------------------------*\
+    PAGE
+    -
+    Reglas generales para el canvas
+\*----------------------------------------------------*/
+
+html {
+	font-size: $global-font-size;
+	line-height: calc($global-line-height / $global-font-size);
+	font-family: $global-font-family;
+	min-height: 100%;
+	background: $global-background;
+	color: $global-color;
+}

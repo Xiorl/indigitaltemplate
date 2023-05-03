@@ -1,0 +1,379 @@
+/*
+
+BTN
+-
+Rules for the buttons on the site
+
+*/
+
+// General rules
+.btn,
+.btn a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+// size variations
+@mixin btn-s-large {
+  padding: $global-spacing-unit-small 25px;
+  font-size: 18px;
+}
+@mixin btn-s-regular {
+  padding: 10px 20px;
+  font-size: 16px;
+  
+}
+@mixin btn-s-small {
+  padding: $global-spacing-unit-small;
+  font-size: 12px;
+}
+
+// color variations
+@mixin btn-purple {
+  background: $purple;
+  &:hover {
+    background-color: $l-blue;
+    border: 2px solid $l-blue;
+    @include animation(0.5s);
+  }
+}
+
+@mixin btn-blue {
+  background: $l-blue;
+  &:hover {
+    background-color: $purple;
+    border: 2px solid $purple;
+    @include animation(0.5s);
+  }
+}
+
+@mixin btn-gray {
+  background: $gray;
+  color: $white;
+  &:hover {
+    background-color: $black;
+    @include animation(0.5s);
+  }
+}
+
+@mixin btn-whatsapp {
+  background: $whatsapp-c;
+  color: white;
+  &:hover {
+    color: $whatsapp-c; 
+    background-color: $white;
+    border: 2px solid $whatsapp-c;
+    @include animation(0.5s);
+  }
+}
+
+@mixin btn-border {
+  border: solid 2px $purple;
+  &:hover {
+    border: 2px solid $l-blue;
+    @include animation(0.5s);
+  }
+}
+@mixin btn-radius {
+  border-radius: 30px;
+}
+
+
+
+
+// btn nav
+.btn--nav {
+  width: 30px;
+  height: 30px;
+  display: block;
+  background: none;
+  border: none;
+  div {
+    width: 100%;
+    height: 5px;
+    background: $gray;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+  }
+}
+
+// btn close
+.btn--close {
+  display: block;
+  width: 33px;
+  height: 33px;
+  background: none;
+  border: none;
+  position: relative;
+  div {
+    width: 100%;
+    height: 5px;
+    border-radius: 3px;
+    background: $gray;
+    position: absolute;
+    top: 50%;
+  }
+  div:nth-child(1) {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  div:nth-child(2) {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
+
+// arrow buttons
+.btn--arrow {
+  font-size: 30px;
+  color: $gray;
+  width: 70px;
+  height: 70px;
+  background: $l-white;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.50);
+  @include animation(0.5s);
+  &:hover {
+    background: $purple;
+    color: $white;
+  }
+
+  // media queries
+  @media #{$tablet} {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+// .btn--none {
+//   border:0;
+//   outline:0 none;
+//   background: none;
+//   font-family: $global-font-family;
+  
+// }
+
+
+.btn--back {
+  font-size: 18px;
+  font-weight: 300;
+  color: $l-gray;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin: $global-spacing-unit-small 0;
+  border:0;
+
+  // styles for button
+  outline:0 none;
+  background: none;
+  font-family: $global-font-family;
+
+  &:before {
+      content: '\E802';
+      font-size: 18px;
+      font-family: $icons;
+      margin-right: $global-spacing-unit-small;
+  }
+
+  &:hover {
+      cursor: pointer;
+      color: $purple;
+      @include animation(0.5s);
+  }
+
+  //media queries
+  @media #{$desktop} {
+  
+  }
+  @media #{$tablet} {
+      font-size: 18px;
+      font-weight: 400;
+  }
+}
+
+.white {
+  color: $white;
+}
+
+
+.btn--phone {
+  width: 90%;
+  @include btn-purple;
+  @include btn-border;
+  color: $white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: $global-spacing-unit-small;
+  padding: $global-spacing-unit-small;
+  &:after {
+      content: '\E819';
+      font-size: 30px;
+      font-family: $icons;
+      margin: 0 $global-spacing-unit-small;
+  }
+
+  // media queries
+  @media #{$tablet} {
+      font-size: 18px;
+      &:after {
+          margin: 0 $global-spacing-unit-tiny;
+      }
+  }
+
+}
+
+.btn--whatsapp {
+  width: 90%;
+  @include btn-whatsapp;
+  border: 2px solid $whatsapp-c;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: $global-spacing-unit-small;
+  padding: $global-spacing-unit-small;
+  &::after {
+      content: '\F232';
+      font-size: 30px;
+      font-family: $icons;
+      margin: 0 $global-spacing-unit-small;
+  }
+
+  // media queries
+  @media #{$tablet} {
+      font-size: 18px;
+      &:after {
+          margin: 0 $global-spacing-unit-tiny;
+      }
+  }
+
+}
+
+  .btn--develop {
+      width: 90%;
+      @include btn-purple;
+      @include btn-border;
+      border-radius: 10px;
+      color: $white;
+      font-size: 20px;
+      font-weight: 500;
+      margin-top: $global-spacing-unit-small;
+      padding: $global-spacing-unit-small;
+      &::after {
+          content: '\F10A';
+          font-size: 30px;
+          font-family: $icons;
+          margin: 0 $global-spacing-unit-small;
+      }
+
+      // media queries
+      @media #{$tablet} {
+          font-size: 18px;
+          &:after {
+              margin: 0 $global-spacing-unit-tiny;
+          }
+      }
+    
+  }
+
+  .btn--view {
+    display: flex;
+    color: $m-gray;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    @media #{$tablet} {
+      font-size: 18px;
+    
+    }
+
+    &:after {
+        
+        content: '\E803';
+        font-size: 30px;
+        font-family: $icons;
+        margin-left: $global-spacing-unit-tiny;
+        @media #{$tablet} {
+          font-size: 25px;
+        
+        }
+        
+    }
+
+    &:hover {
+      color: $purple;
+      @include animation(0.5s);
+    }
+}
+
+
+.btn--whatsapp-mini {
+  @include btn-whatsapp;
+  @include btn-radius;
+  border: 2px solid $whatsapp-c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 55px;
+  &::after {
+      content: '\F232';
+      font-size: 30px;
+      font-family: $icons;
+
+  }
+
+}
+
+
+.btn--purple {
+  @include btn-purple;
+  @include btn-border;
+  @include btn-s-large;
+  @include btn-radius;
+  color: $white;
+  
+}
+
+
+.btn--send {
+  @include btn-purple;
+  @include btn-s-large;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $global-spacing-unit-large;
+  border: 2px solid $purple;
+  color: $white;
+  
+  &:after {
+    content: '\F0E5';
+    font-size: 30px;
+    font-family: $icons;
+    margin-left: $global-spacing-unit-tiny;
+ }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+.btn--search {
+  border: none;
+  &:after {
+    margin-left: $global-spacing-unit-tiny;
+    content: '\E801';
+    font-family: $icons;
+  }
+}

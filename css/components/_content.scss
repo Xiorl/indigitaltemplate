@@ -1,0 +1,44 @@
+/*
+
+CONTENT
+-
+Rules for the content elements
+
+*/
+
+// General rules
+.content--aside {
+
+  .wrapper {
+    display: flex;
+    // media queries
+    @media #{$desktop} {
+      flex-direction: column;
+    }
+  }
+
+  .wrapper > div,
+  .wrapper > article {
+    flex-grow: 1;
+    width: calc(100% - 530px);
+    margin-right: $global-spacing-unit;
+    // media queries
+    @media #{$desktop} {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  .wrapper .aside,
+  .wrapper aside {
+    width: 450px;
+    min-width: 450px;
+    // media queries
+    @media #{$desktop} {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+}
+

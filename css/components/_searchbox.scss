@@ -1,0 +1,255 @@
+/*
+
+SEARCH PAGE
+-
+Searchboxes in the site
+
+*/ 
+
+
+.searchbox {
+    background: rgba(121, 37, 239, 0.6);
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 20px;
+    padding: $global-spacing-unit;
+    // media queries
+    @media only screen and (max-width: 330px) {
+    
+        padding: $global-spacing-unit-tiny;
+    }
+
+    // media queries
+    @media #{$tablet} {
+        width: 100%;
+    }
+
+    // title
+    .title--cta {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 300;
+        color: $white;
+        margin-bottom: $global-spacing-unit;
+        // media queries
+        @media #{$tablet} {
+            font-size: 28px;
+            margin-bottom: 1em;
+        }
+    }
+
+    // search filters
+    .search-filter {
+
+        display: flex;
+        flex-direction: row;
+        background: rgba(217, 220, 219, 0.8);
+        padding: $global-spacing-unit-small;
+        border-radius: 10px;
+        margin-bottom: $global-spacing-unit-small;
+
+        label {
+            font-weight: 300;
+        }
+
+        .filter-box {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            // media queries
+            @media #{$tablet} {
+                justify-content: center;
+                label {
+                    max-width: 55%;
+                    font-weight: $t-light;
+                    //margin-left: $global-spacing-unit-small;
+                    
+                }
+            }
+
+        }
+        // first block of elements
+        &:nth-child(2) {
+            .filter-box {
+                flex-direction: row-reverse;
+            }
+            input {
+                margin-right: $global-spacing-unit-tiny;
+            }
+
+            // media queries
+            @media #{$desktop} {
+                flex-direction: column;
+                align-items: center;
+                span {
+                    text-transform: uppercase;
+                    margin-bottom: $global-spacing-unit;
+                }
+                .filter-box {
+                    width: 80%;
+                    min-width: 320px;
+                    margin-bottom: $global-spacing-unit-tiny;
+                    flex-direction: row;
+                }
+                label {
+                    flex-grow: 1;
+                }
+            }
+        }
+        // second block of elements
+        &:nth-child(3) {
+            align-items: center;
+            .filter-box {
+                flex-direction: column-reverse;
+            }
+            .filter-box:nth-child(2) input:checked:before {
+                content: '\E8C0';
+                font-size: 2rem;
+            }
+            .filter-box:nth-child(3) input:checked:before {
+                content: '\E8C1';
+                font-size: 2rem;
+            }
+            .filter-box:nth-child(4) {
+                flex-direction: row;
+                flex-grow: 4;
+                // media queries
+                @media #{$desktop} {
+                    width: 100%;
+                    min-width: 100%;
+                }
+                @media #{$tablet} {
+                    flex-wrap: wrap;
+                }
+                label {
+                    font-weight: 700;
+                    color: $gray;
+                    white-space: nowrap;
+                    margin-right: $global-spacing-unit-small;
+                    // media queries
+                    @media #{$tablet} {
+                        width: 100%;
+                        text-align: center;
+                        white-space: break-spaces;
+                        padding-top: $global-spacing-unit-small;
+                        padding-bottom: $global-spacing-unit-small;
+                    }
+                }
+            }
+            input {
+                width: 60px;
+                height: 60px;
+                margin-bottom: $global-spacing-unit-tiny;
+            }
+
+            // media queries
+            @media #{$desktop} {
+                flex-wrap: wrap;
+                span {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: $global-spacing-unit-tiny;
+                }
+            }
+        }
+        // filterbox CTA
+        span {
+            color: $gray;
+            font-weight: 700;
+            margin-right: $global-spacing-unit-small;
+        }
+        // input container
+        > div {
+            flex-grow: 1;
+        }
+        // inputs
+        input {
+            width: 30px;
+            height: 30px;
+            border-radius: 10px;
+            border: 2px solid $white;
+            outline: none;
+            position: relative;
+
+            -moz-appearance:none;
+            -webkit-appearance:none;
+            -o-appearance:none;
+
+            @include animation(0.5s);
+
+            &:hover {
+                background-color: rgba(255, 255, 255,0.4);
+                border: 2px solid rgba(50, 50, 50, 0.9);
+                cursor: pointer;
+            }
+        }
+        input:checked {
+            background: $white;
+            border-color: $gray;
+        }
+        input:checked:before {
+            content: '\E80B';
+            color: $gray;
+            font-family: $icons;
+            position: absolute;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0px);
+        }
+        // selects
+        select {
+            font-family: $global-font-family;
+            font-weight: 300;
+            width: 100%;
+            padding: $global-spacing-unit-tiny $global-spacing-unit-small;
+            border: solid 1px $gray;
+            border-radius: 50px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+
+
+
+    }
+
+    // submit
+    .search-submit {
+        display: flex;
+        flex-direction: row-reverse;
+
+        // media queries
+        @media #{$desktop} {
+            flex-direction: row;
+            justify-content: center;
+        }
+
+    }
+    
+    .btn--full {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    //button
+    .btn {
+        @include btn-gray;
+        @include btn-s-large;
+        border-radius: 50px;
+        display: inline-block;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}
